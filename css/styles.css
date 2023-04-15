@@ -296,6 +296,7 @@ button:hover{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index:10;
   }
 
   .icon{
@@ -494,6 +495,7 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 15px;
+
 }
 .footer__container{
   max-width: 800px;
