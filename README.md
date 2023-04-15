@@ -173,8 +173,8 @@ If you like this project, please give it a star, and if you would love to tell m
 
 
 I would like to thank Microverse community for this opportunity to learn new things.
-**[The original design of this work is credited to Cindy Shin.]**
-**[The Creative license is also credited to (https://www.behance.net/adagio07)]**
+- **[The original design of this work is credited to Cindy Shin.]**
+- **[The Creative license is also credited to (https://www.behance.net/adagio07)]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
