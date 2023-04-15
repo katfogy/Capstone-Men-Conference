@@ -54,7 +54,7 @@ header{
  background-position: center;
  background-size: cover;
  background-repeat: no-repeat;
- min-height: 100vh;
+ /* min-height: 100vh; */
  padding: 20px;
 }
 
@@ -123,8 +123,21 @@ padding: 15px;
 .program__title{
   text-align: center;
   color: var(--color-lighter-gray);
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   font-size: 1.5rem;
+  position: relative;
+}
+
+.program__title::after{
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(--color-royal-orange);
+top:150%;
+left: 50%;
+display: block;
+transform: translate(-50%,-50%);
 }
 .program__card-image{
   width: 90%;
@@ -162,4 +175,65 @@ margin-top: 20px;
 font-family: inherit;
 color: var(--color-lighter-gray);
 font-size: 1.5rem;
+}
+
+
+.feature-speakers{
+  padding: 40px 20px;
+}
+
+.feature-speakers__container-title{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feature-speakers__card{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap:5px;
+  margin-bottom: 10px;
+
+}
+.speaker-pix{
+  width: 150px;
+}
+.feature-speakers__card-details-name{
+  margin-block: 10px;
+}
+.feature-speakers__card-details-info{
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--color-royal-orange);
+  margin-bottom: 5px;
+}
+
+.feature-speakers__card-details-about{
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.feature-speakers__see-more{
+  margin: 10px auto;
+  display: block;
+  background-color: var(--color-white);
+  color: var(--color-charleston-green);
+  border:1px solid var(--color-charleston-green);
+  padding: 10px 15px;
+}
+
+
+footer{
+  background-color: var(--color-charleston-green);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.footer-logo{
+  width: 150px;
+}
+
+.reserve{
+  font-size: 13px;
+  color: var(--color-lighter-gray);
 }
