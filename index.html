@@ -4,11 +4,85 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Men International Conference 2023</title>
 </head>
 <body>
- <div class="intro">Testing</div>
+ <header>
+    <nav>
+        <div class="top-nav hide">
+            <img src="asset/images/facebook.svg" alt="facebook-logo" class="icon">
+            <img src="asset/images/twitter.svg" alt="facebook-logo" class="icon">
+            <ul class="top-nav__menu">
+                <li class="top-nav__menu-item"><a href="#">English</a></li>
+                <li class="top-nav__menu-item"><a href="#">My Page</a></li>
+                <li class="top-nav__menu-item"><a href="#">Logout</a></li>
+            </ul>
+        </div>
+            <div class="lower-nav hide">
+                <img src="asset/images/logo.png" alt="logo" width="200px">
+            <ul class="logo__menu-list">
+                <li class="menu-list__item"><a href="#">About</a></li>
+                <li class="menu-list__item"><a href="#">Program</a></li>
+                <li class="menu-list__item"><a href="#">Join</a></li>
+                <li class="menu-list__item"><a href="#">News</a></li>
+                <li class="menu-list__item"><a href="#">CC Campaign</a></li>
+            </ul>
+            </div>
+            <div class="lower-nav__hamburger">
+                <img src="asset/images/hamburgerImg.svg" alt="hambuger" class="open ham-icon">
+                <img src="asset/images/close.png" alt="hambuger" class="close hide ham-icon">
+            </div>
+    </nav>
+    <div class="hero">
+        <h3 class="hero__title">"Hello ! Sharing World"</h3>
+        <h1 class="hero__heading">IMES Global Summit 2023</h1>
+        <p class="hero__body">A joyful celebration believing in the value of openness and
+            sharing, creating a positive change with people from over 80
+            countries is taking place in October, in Nigeria</p>
+            <h2 class="hero__date">2023.10.15(THU)~15(FRI)</h2>
+            <p class="hero__venue">@ Abuja International Conference, Nigeria</p>
+    </div>
+ </header>
+ <main>
+    <div class="program">
+        <div class="program__card">
+            <img src="asset/images/lecture.svg" alt="lecture" class="program__card-image">
+            <h2 class="program__card-title">Lecture</h2>
+            <p class="program__card-body">Listen to the speakers from various
+                countries about the messages of 
+                sharing and opening</p>
+        </div>
+
+        <div class="program__card">
+            <img src="asset/images/exhibition.svg" alt="exhibition" class="program__card-image">
+            <h2 class="program__card-title">CC Exhibition</h2>
+            <p class="program__card-body">Appriciate various creations applying CC Lincese of Artists, organized from art center Nigeria</p>
+        </div>
+
+        <div class="program__card">
+            <img src="asset/images/forum.svg" alt="forum" class="program__card-image">
+            <h2 class="program__card-title">Forum</h2>
+            <p class="program__card-body">Have the time to share your thoughts and opinions with experts for each topic</p>
+        </div>
+
+        <div class="program__card">
+            <img src="asset/images/workshop.svg" alt="workshop" class="program__card-image">
+            <h2 class="program__card-title">Workshop</h2>
+            <p class="program__card-body">Try creating your own work using open source license rather than just watching</p>
+        </div>
+
+        <div class="program__card">
+            <img src="asset/images/meetAndGreet.svg" alt="CC ignite" class="program__card-image">
+            <h2 class="program__card-title">CC Ignite</h2>
+            <p class="program__card-body">Get opportunity to network with CC affliates  around the world, also after the summit</p>
+        </div>
+
+            <button class="program__btn">Join IMES 2023</button>
+    </div>
+
+    
+ </main>
     <script src="app.js"></script>
 </body>
 </html>
