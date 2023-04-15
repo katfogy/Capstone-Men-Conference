@@ -115,9 +115,16 @@ padding: 15px;
 
 .program{
   background-color: var(--color-charleston-green);
-  padding: 100px 25px;
+  padding: 50px 25px;
   display: grid;
   grid-template-columns: 1fr;
+}
+
+.program__title{
+  text-align: center;
+  color: var(--color-lighter-gray);
+  margin-bottom: 30px;
+  font-size: 1.5rem;
 }
 .program__card-image{
   width: 90%;
