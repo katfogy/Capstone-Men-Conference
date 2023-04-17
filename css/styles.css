@@ -54,9 +54,7 @@ body {
   display: none;
 }
 
-.lower-nav {
-  /* position: relative; */
-}
+
 
 /* start */
 .lower-nav__center {
@@ -145,6 +143,7 @@ header {
   display: inline-block;
   background-image: url(/asset/images/joseph-chan-iMxsCt2rxAQ-unsplash.jpg);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   background-size: contain;
 }
