@@ -55,10 +55,11 @@ body {
 }
 
 .lower-nav {
-/* position: relative; */
+  /* position: relative; */
 }
+
 /* start */
-.lower-nav__center{
+.lower-nav__center {
   position: fixed;
   background-color: rgba(74, 20, 14, 0.95);
   width: 100%;
@@ -69,8 +70,7 @@ body {
   padding: 70px 25px;
 }
 
-
-.logo__menu-list{
+.logo__menu-list {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -78,30 +78,31 @@ body {
   height: 100%;
 }
 
-
-.menu-list__item a{
-color: var(--color-lighter-gray);
-font-size: 1.5rem;
-font-weight: 900;
-border-bottom: 2px solid var(--color-light-gray);
-display: block;
-padding-bottom: 10px;
+.menu-list__item a {
+  color: var(--color-lighter-gray);
+  font-size: 1.5rem;
+  font-weight: 900;
+  border-bottom: 2px solid var(--color-light-gray);
+  display: block;
+  padding-bottom: 10px;
 }
 
-.cc-campaign{
+.cc-campaign {
   display: none;
 }
 
-#hambuger{
+#hambuger {
   position: fixed;
   padding: 10px 25px;
   top: 0;
   left: 0;
 }
+
 /* end here */
-.lower-nav__logo{
+.lower-nav__logo {
   display: none;
 }
+
 header {
   background: linear-gradient(rgba(239, 234, 234, 0.9), rgba(236, 236, 240, 0.9)), url("/asset/images/arturo-castaneyra-tPE60iK97qw-unsplash.jpg");
   background-position: center;
@@ -366,35 +367,10 @@ button:hover {
     color: var(--color-white);
   }
 
-  .lower-nav__logo {
-    width: 15%;
-    cursor: pointer;
-  }
-
   .lower-nav {
     width: 100%;
     background-color: var(--color-white);
     display: block;
-  }
-
-  .lower-nav__center {
-    padding: 30px 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20px;
-  }
-
-  .logo__menu-list {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .menu-list__item a {
-    margin-right: 20px;
-    color: var(--color-charleston-green);
   }
 
   .cc-campaign a {
@@ -557,46 +533,50 @@ button:hover {
     color: var(--color-charleston-green);
   }
 
+  .lower-nav__center {
+    position: static;
+    background-color: var(--color-white);
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    z-index: 5;
+    padding: 30px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  .logo__menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-  /* start */
-.lower-nav__center{
-  position: static;
-  background-color: var(--color-charleston-green)
-  width: 100%;
-  top: 0;
-  left: 0;
-  height: 70px;
-  z-index: 5;
-}
+  .menu-list__item a {
+    color: var(--color-charleston-green);
+    font-size: 1rem;
+    font-weight: normal;
+    border-bottom: 0;
+    display: block;
+    padding-bottom: 0;
+  }
 
+  .cc-campaign {
+    display: none;
+  }
 
-.logo__menu-list{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 20px;
-  align-items: center;
-}
+  #hambuger {
+    display: none;
+  }
 
-
-.menu-list__item a{
-color: var(--color-charleston-green);
-font-size: 1rem;
-font-weight: normal;
-border-bottom: 0;
-display: block;
-padding-bottom: 0px;
-}
-
-.cc-campaign{
-  display: none;
-}
-
-#hambuger{
-  display: none;
-}
-.lower-nav__logo{
-  display: block;
-}
+  .lower-nav__logo {
+    width: 15%;
+    cursor: pointer;
+    display: block;
+  }
 }
