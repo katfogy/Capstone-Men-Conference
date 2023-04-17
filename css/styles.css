@@ -286,10 +286,8 @@ button:hover {
   }
 
   nav {
-    background-color: var(--color-charleston-green);
-    position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 10;
   }
 
@@ -299,13 +297,21 @@ button:hover {
     cursor: pointer;
   }
 
-  .top-nav {
+  .top-nav{
+    display: block;
+    background-color: var(--color-charleston-green);
+    width: 100%;
+  }
+
+  .top-nav__container {
     display: flex;
     justify-content: flex-end;
     height: 40px;
     padding: 5px 50px;
     max-width: 1200px;
     margin: 0 auto;
+
+
   }
 
   .top-nav__menu {
@@ -509,5 +515,9 @@ button:hover {
   .reserve {
     font-size: 1rem;
     color: var(--color-charleston-green);
+  }
+
+  nav{
+    position: fixed;
   }
 }
