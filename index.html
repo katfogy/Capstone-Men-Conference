@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,37 +7,41 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Men International Conference 2023</title>
 </head>
-
 <body>
  <header>
     <nav>
-        <div class="top-nav hide">
-            <img src="asset/images/facebook.svg" alt="facebook-logo" class="icon">
+        <div class="top-nav">
+            <div class="top-nav__container">
+                <img src="asset/images/facebook.svg" alt="facebook-logo" class="icon">
             <img src="asset/images/twitter.svg" alt="facebook-logo" class="icon">
             <ul class="top-nav__menu">
                 <li class="top-nav__menu-item"><a href="#">English</a></li>
                 <li class="top-nav__menu-item"><a href="#">My Page</a></li>
                 <li class="top-nav__menu-item"><a href="#">Logout</a></li>
             </ul>
-        </div>
-            <div class="lower-nav hide">
-                <img src="asset/images/logo.png" alt="logo" width="200px">
-            <ul class="logo__menu-list">
-                <li class="menu-list__item"><a href="#">About</a></li>
-                <li class="menu-list__item"><a href="#">Program</a></li>
-                <li class="menu-list__item"><a href="#">Join</a></li>
-                <li class="menu-list__item"><a href="#">News</a></li>
-                <li class="menu-list__item"><a href="#">CC Campaign</a></li>
-            </ul>
             </div>
-            <div class="lower-nav__hamburger">
-                <img src="asset/images/hamburgerImg.svg" alt="hambuger" class="open ham-icon">
-                <img src="asset/images/close.png" alt="hambuger" class="close hide ham-icon">
+        </div>
+            <div class="lower-nav">
+           <div class="lower-nav__center hide" id="menu">
+            <img src="asset/images/logo.png" alt="logo" class="lower-nav__logo">
+            <ul class="logo__menu-list">
+                <li class="menu-list__item"><a href="#">Home</a></li>
+                <li class="menu-list__item"><a href="about.html">About</a></li>
+                <li class="menu-list__item"><a href="#speakers">Program</a></li>
+                <li class="menu-list__item"><a href="#join">Join</a></li>
+                <li class="menu-list__item"><a href="#partners">Partners</a></li>
+                <li class="menu-list__item cc-campaign"><a href="#">CC Campaign</a></li>
+            </ul>
+           </div>
+            </div>
+            <div class="lower-nav__hamburger" id="hambuger">
+                <img src="asset/images/hamburgerImg.svg" alt="hambuger" class="open ham-icon" id="openHam">
+                <img src="asset/images/close.png" alt="hambuger" class="close hide ham-icon" id="closeHam">
             </div>
     </nav>
-    <div class="hero">
-        <h3 class="hero__title">"Hello ! Sharing World"</h3>
-        <h1 class="hero__heading">IMES Global Summit 2023</h1>
+    <div class="hero" id="about">
+        <h3 class="hero__title">"Hello! Gentle Men"</h3>
+        <h1 class="hero__heading">INTERNATIONAL MEN EMPOWERMENT SCHEME 2023</h1>
         <p class="hero__body">A joyful celebration believing in the value of openness and
             sharing, creating a positive change with people from over 80
             countries is taking place in October, in Nigeria</p>
@@ -47,8 +50,9 @@
     </div>
  </header>
  <main>
-    <div class="program">
+    <div class="program" id="programs">
         <h3 class="program__title">Main Program</h3>
+     <div class="program__cards">
         <div class="program__card">
             <img src="asset/images/lecture.svg" alt="lecture" class="program__card-image">
             <h2 class="program__card-title">Lecture</h2>
@@ -57,45 +61,118 @@
                 sharing and opening</p>
         </div>
 
-                <div class="program__card">
-                    <img src="asset/images/exhibition.svg" alt="exhibition" class="program__card-image">
-                    <h2 class="program__card-title">CC Exhibition</h2>
-                    <p class="program__card-body">Appriciate various creations applying CC Lincese of Artists, organized
-                        from art center Nigeria</p>
-                </div>
+        <div class="program__card">
+            <img src="asset/images/exhibition.svg" alt="exhibition" class="program__card-image">
+            <h2 class="program__card-title">CC Exhibition</h2>
+            <p class="program__card-body">Appriciate various creations applying CC Lincese of Artists, organized from art center Nigeria</p>
+        </div>
 
-                <div class="program__card">
-                    <img src="asset/images/forum.svg" alt="forum" class="program__card-image">
-                    <h2 class="program__card-title">Forum</h2>
-                    <p class="program__card-body">Have the time to share your thoughts and opinions with experts for
-                        each topic</p>
-                </div>
+        <div class="program__card">
+            <img src="asset/images/forum.svg" alt="forum" class="program__card-image">
+            <h2 class="program__card-title">Forum</h2>
+            <p class="program__card-body">Have the time to share your thoughts and opinions with experts for each topic</p>
+        </div>
 
-                <div class="program__card">
-                    <img src="asset/images/workshop.svg" alt="workshop" class="program__card-image">
-                    <h2 class="program__card-title">Workshop</h2>
-                    <p class="program__card-body">Try creating your own work using open source license rather than just
-                        watching</p>
-                </div>
+        <div class="program__card">
+            <img src="asset/images/workshop.svg" alt="workshop" class="program__card-image">
+            <h2 class="program__card-title">Workshop</h2>
+            <p class="program__card-body">Try creating your own work using open source license rather than just watching</p>
+        </div>
 
-                <div class="program__card">
-                    <img src="asset/images/meetAndGreet.svg" alt="CC ignite" class="program__card-image">
-                    <h2 class="program__card-title">CC Ignite</h2>
-                    <p class="program__card-body">Get opportunity to network with CC affliates around the world, also
-                        after the summit</p>
-                </div>
-            </div>
-
-            <button class="program__btn" id="join">Join IMES 2023</button>
+        <div class="program__card">
+            <img src="asset/images/meetAndGreet.svg" alt="CC ignite" class="program__card-image">
+            <h2 class="program__card-title">CC Ignite</h2>
+            <p class="program__card-body">Get opportunity to network with CC affliates  around the world, also after the summit</p>
         </div>
      </div>
 
-            <button class="program__btn">Join IMES 2023</button>
+            <button class="program__btn" id="join">Join IMES 2023</button>
     </div>
 
+    <section class="feature-speakers" id="speakers">
+        <h2 class="feature-speakers__container-title">Feature Speakers</h2>
+        <div class="feature-speakers__container">
+            <div class="feature-speakers__card">
+                <img src="/asset/speakers/aliko-dangote.png" alt="dangote" class="speaker-pix">
+                <div class="feature-speakers__card-details">
+                    <h3 class="feature-speakers__card-details-name">Aliko Dangote</h3>
+                    <p class="feature-speakers__card-details-info">Lorem ipsum dolor sit amet</p>
+                    <p class="feature-speakers__card-details-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum rerum animi praesentium aliquid eaque est rem</p>
+                </div>
+            </div>
+
+            <div class="feature-speakers__card">
+                <img src="/asset/speakers/femi-otedola.png" alt="dangote" class="speaker-pix">
+                <div class="feature-speakers__card-details">
+                    <h3 class="feature-speakers__card-details-name">Femi Otedola</h3>
+                    <p class="feature-speakers__card-details-info">Lorem ipsum dolor sit amet</p>
+                    <p class="feature-speakers__card-details-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum rerum animi praesentium aliquid eaque est rem</p>
+                </div>
+            </div>
+
+            <div class="feature-speakers__card">
+                <img src="/asset/speakers/femi-otedola.png" alt="dangote" class="speaker-pix">
+                <div class="feature-speakers__card-details">
+                    <h3 class="feature-speakers__card-details-name">Femi Otedola</h3>
+                    <p class="feature-speakers__card-details-info">Lorem ipsum dolor sit amet</p>
+                    <p class="feature-speakers__card-details-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum rerum animi praesentium aliquid eaque est rem</p>
+                </div>
+            </div>
+
+            <div class="feature-speakers__card">
+                <img src="/asset/speakers/femi-otedola.png" alt="dangote" class="speaker-pix">
+                <div class="feature-speakers__card-details">
+                    <h3 class="feature-speakers__card-details-name">Femi Otedola</h3>
+                    <p class="feature-speakers__card-details-info">Lorem ipsum dolor sit amet</p>
+                    <p class="feature-speakers__card-details-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum rerum animi praesentium aliquid eaque est rem</p>
+                </div>
+            </div>
+
+            <div class="feature-speakers__card">
+                <img src="/asset/speakers/femi-otedola.png" alt="dangote" class="speaker-pix">
+                <div class="feature-speakers__card-details">
+                    <h3 class="feature-speakers__card-details-name">Femi Otedola</h3>
+                    <p class="feature-speakers__card-details-info">Lorem ipsum dolor sit amet</p>
+                    <p class="feature-speakers__card-details-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum rerum animi praesentium aliquid eaque est rem</p>
+                </div>
+            </div>
+
+            <div class="feature-speakers__card">
+                <img src="/asset/speakers/femi-otedola.png" alt="dangote" class="speaker-pix">
+                <div class="feature-speakers__card-details">
+                    <h3 class="feature-speakers__card-details-name">Femi Otedola</h3>
+                    <p class="feature-speakers__card-details-info">Lorem ipsum dolor sit amet</p>
+                    <p class="feature-speakers__card-details-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorum rerum animi praesentium aliquid eaque est rem</p>
+                </div>
+            </div>
+        </div>
+        <button class="feature-speakers__see-more">See More</button>
+    </section>
+
+    <section class="partners" id="partners">
+        <div class="partners__container">
+            <h2 class="partners__container-heading">Partners</h2>
+            <div class="partners__container-logo">
+                <div class="partners__container-logo__item">Google</div>
+                <div class="partners__container-logo__item">Ingressive for good</div>
+                <div class="partners__container-logo__item">Airbnb</div>
+                <div class="partners__container-logo__item">Firefox</div>
+                <div class="partners__container-logo__item">Slack</div>
+            </div>
+        </div>
+    </section>
+</main>
+
+
+    <footer>
+        <div class="footer__container">
+            <img src="/asset/images/logo.png" alt="footer-logo" class="footer-logo">
+        <p class="reserve">2023 IMES. All rights reserved.</p>
+        </div>
+    </footer>
+
     
- </main>
+
     <script src="app.js"></script>
 </body>
-
 </html>
