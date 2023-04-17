@@ -25,11 +25,14 @@
   margin-bottom: 10px;
 }
 
+
 .about__hero-title {
+  padding-top: 40px;
   color: var(--color-royal-orange);
 }
 
 .about__hero-body {
+  margin-top: 80px;
   background-color: var(--color-lighter-gray);
   padding: 10px;
   line-height: 1.5;

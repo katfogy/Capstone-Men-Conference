@@ -43,3 +43,28 @@ const speakers = [
   },
 ];
 
+let openHam=document.getElementById('openHam');
+let closeHam=document.getElementById('closeHam');
+let hambuger=document.getElementById('hambuger');
+let menuLink=document.querySelectorAll('.menu-list__item');
+const menucontainer=document.querySelector('.lower-nav__center');
+
+
+openHam.addEventListener('click',(e)=>{
+  menucontainer.classList.toggle('hide');
+  openHam.classList.add('hide');
+  closeHam.classList.remove('hide');
+});
+
+
+closeHam.addEventListener('click',(e)=>{
+  menucontainer.classList.toggle('hide');
+  openHam.classList.remove('hide');
+  closeHam.classList.add('hide');
+});
+
+menuLink.forEach((link) => link.addEventListener('click', () => {
+  menucontainer.classList.add('hide');
+  openHam.classList.remove('hide');
+  closeHam.classList.add('hide');
+}));
