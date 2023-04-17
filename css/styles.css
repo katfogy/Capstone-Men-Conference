@@ -121,6 +121,10 @@ header {
   width: 3rem;
 }
 
+.about__hero-title {
+  padding-top: 40px;
+}
+
 .hero {
   padding: 15px;
   margin-top: 20px;
