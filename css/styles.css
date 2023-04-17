@@ -88,6 +88,7 @@ header {
 
 .hero__title {
   font-size: 1.5rem;
+  color: var(--color-carmine-pink);
 }
 
 .hero__heading {
@@ -98,13 +99,8 @@ header {
   display: inline-block;
   background-image: url(/asset/images/joseph-chan-iMxsCt2rxAQ-unsplash.jpg);
   -webkit-background-clip: text;
-  background-clip: text;
   color: transparent;
   background-size: contain;
-}
-
-.hero__title {
-  color: var(--color-carmine-pink);
 }
 
 .hero__body {
@@ -287,6 +283,7 @@ button:hover {
   }
 
   nav {
+    position: fixed;
     top: 0;
     width: 100vw;
     z-index: 10;
@@ -298,7 +295,7 @@ button:hover {
     cursor: pointer;
   }
 
-  .top-nav{
+  .top-nav {
     display: block;
     background-color: var(--color-charleston-green);
     width: 100%;
@@ -311,8 +308,6 @@ button:hover {
     padding: 5px 50px;
     max-width: 1200px;
     margin: 0 auto;
-
-
   }
 
   .top-nav__menu {
@@ -441,7 +436,7 @@ button:hover {
     gap: 0;
   }
 
-  .speaker-pix:hover {
+  .speaker-pix {
     transition: all 0.5s ease-in;
   }
 
@@ -516,9 +511,5 @@ button:hover {
   .reserve {
     font-size: 1rem;
     color: var(--color-charleston-green);
-  }
-
-  nav{
-    position: fixed;
   }
 }
