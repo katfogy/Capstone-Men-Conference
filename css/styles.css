@@ -55,9 +55,53 @@ body {
 }
 
 .lower-nav {
+/* position: relative; */
+}
+/* start */
+.lower-nav__center{
+  position: fixed;
+  background-color: rgba(74, 20, 14, 0.95);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 5;
+  padding: 70px 25px;
+}
+
+
+.logo__menu-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  height: 100%;
+}
+
+
+.menu-list__item a{
+color: var(--color-lighter-gray);
+font-size: 1.5rem;
+font-weight: 900;
+border-bottom: 2px solid var(--color-light-gray);
+display: block;
+padding-bottom: 10px;
+}
+
+.cc-campaign{
   display: none;
 }
 
+#hambuger{
+  position: fixed;
+  padding: 10px 25px;
+  top: 0;
+  left: 0;
+}
+/* end here */
+.lower-nav__logo{
+  display: none;
+}
 header {
   background: linear-gradient(rgba(239, 234, 234, 0.9), rgba(236, 236, 240, 0.9)), url("/asset/images/arturo-castaneyra-tPE60iK97qw-unsplash.jpg");
   background-position: center;
@@ -512,4 +556,47 @@ button:hover {
     font-size: 1rem;
     color: var(--color-charleston-green);
   }
+
+
+
+  /* start */
+.lower-nav__center{
+  position: static;
+  background-color: var(--color-charleston-green)
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 70px;
+  z-index: 5;
+}
+
+
+.logo__menu-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: center;
+}
+
+
+.menu-list__item a{
+color: var(--color-charleston-green);
+font-size: 1rem;
+font-weight: normal;
+border-bottom: 0;
+display: block;
+padding-bottom: 0px;
+}
+
+.cc-campaign{
+  display: none;
+}
+
+#hambuger{
+  display: none;
+}
+.lower-nav__logo{
+  display: block;
+}
 }
