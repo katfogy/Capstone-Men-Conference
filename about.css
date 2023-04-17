@@ -64,9 +64,7 @@
 
   }
 
-  .decide__container>*{
-    margin-bottom: 10px;
-  }
+
 
   .decide__container-container{
     display: flex;
@@ -95,7 +93,7 @@
   }
   .previous__container{
     max-width: 1200px;
-    margin: 20px auto;
+    margin: auto;
   }
 
   .previous__container-header{
@@ -144,4 +142,43 @@
 
   .previous__container-images-card-details-body{
     font-size: 0.7rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    .about__hero{
+      max-width: 800px;
+      padding: 40px 20px;
+      margin: 100px auto 20px;
+      
+    }
+
+    .about__hero-heading{
+      font-size: 3rem;
+    }
+
+    .previous__container-images{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .previous__container-images-card{
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .previous__container-images-card:hover{
+      transform: scale(1.1);
+    }
+
+    footer{
+      background-color: var(--color-charleston-green);
+    
+    }
+
+    .about-reserve{
+      color: var(--color-white);
+    }
   }
