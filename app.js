@@ -48,6 +48,8 @@ const closeHam = document.getElementById('closeHam');
 const menuLink = document.querySelectorAll('.menu-list__item');
 const menucontainer = document.querySelector('.lower-nav__center');
 const featuredSpeakers = document.getElementById('all-speakers');
+const seeMore = document.querySelector('.feature-speakers__see-more');
+const seeLess = document.querySelector('.feature-speakers__see-less');
 
 openHam.addEventListener('click', () => {
   menucontainer.classList.toggle('hide');
@@ -70,7 +72,7 @@ menuLink.forEach((link) => link.addEventListener('click', () => {
 const renderspeakers = function () {
   for (let i = 0; i < dynamicspeakers.length; i += 1) {
     featuredSpeakers.innerHTML += `
-    <div class="feature-speakers__card featured-speakers__box featured-speakers__box-display" >
+    <div class="feature-speakers__card" >
     <img src=${dynamicspeakers[i].url} alt=${dynamicspeakers[i].name} class="speaker-pix">
     <div class="feature-speakers__card-details">
         <h3 class="feature-speakers__card-details-name">${dynamicspeakers[i].name}</h3>
@@ -83,3 +85,35 @@ const renderspeakers = function () {
 };
 
 window.addEventListener('load', renderspeakers);
+
+let currentItems = 2;
+
+seeMore.addEventListener('click', () => {
+  const speakersdata = [...document.querySelectorAll('.feature-speakers__card')];
+
+  for (let i = currentItems; i < speakersdata.length; i += 1) {
+    speakersdata[i].style.display = 'grid';
+  }
+
+  currentItems += 4;
+
+  if (currentItems >= speakersdata.length) {
+    seeMore.style.display = 'none';
+    seeLess.classList.remove('hide');
+  }
+});
+
+seeLess.addEventListener('click', () => {
+  const speakersdata = [...document.querySelectorAll('.feature-speakers__card')];
+
+  for (let i = 2; i < speakersdata.length; i += 1) {
+    speakersdata[i].style.display = 'none';
+  }
+
+  currentItems -= 4;
+
+  if (currentItems <= 2) {
+    seeMore.style.display = 'grid';
+    seeLess.classList.add('hide');
+  }
+});
