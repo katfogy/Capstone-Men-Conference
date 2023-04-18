@@ -100,11 +100,6 @@
   width: 100%;
 }
 
-.previous__container-images-card {
-  position: relative;
-  margin-bottom: 10px;
-}
-
 .previous__container-images-card-details {
   position: absolute;
   top: 50%;
@@ -129,6 +124,17 @@
   font-size: 0.7rem;
 }
 
+.previous__container-images-card {
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.previous__container-images-card:hover {
+  transform: scale(1.1);
+}
+
 @media screen and (min-width: 768px) {
   .about__hero {
     max-width: 800px;
@@ -146,15 +152,6 @@
     gap: 20px;
     max-width: 600px;
     margin: 20px auto;
-  }
-
-  .previous__container-images-card {
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .previous__container-images-card:hover {
-    transform: scale(1.1);
   }
 
   footer {
