@@ -580,4 +580,8 @@ button:hover {
     cursor: pointer;
     display: block;
   }
+
+  .feature-speakers__see-more {
+    display: none;
+  }
 }
