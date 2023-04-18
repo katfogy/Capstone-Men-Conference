@@ -67,7 +67,7 @@ menuLink.forEach((link) => link.addEventListener('click', () => {
   closeHam.classList.add('hide');
 }));
 
-const speakers = function () {
+const renderspeakers = function () {
   for (let i = 0; i < dynamicspeakers.length; i += 1) {
     featuredSpeakers.innerHTML += `
     <div class="feature-speakers__card featured-speakers__box featured-speakers__box-display" >
@@ -82,4 +82,4 @@ const speakers = function () {
   }
 };
 
-window.addEventListener('load', speakers);
+window.addEventListener('load', renderspeakers);
