@@ -96,7 +96,7 @@ body {
 }
 
 header {
-  background: linear-gradient(rgba(239, 234, 234, 0.9), rgba(236, 236, 240, 0.9)), url("./asset/images/bgoriginal");
+  background: linear-gradient(rgba(239, 234, 234, 0.9), rgba(236, 236, 240, 0.9)), url("https://images.unsplash.com/photo-1624555130581-1d9cca783bc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
