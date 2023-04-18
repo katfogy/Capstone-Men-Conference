@@ -1,4 +1,4 @@
-const speakers = [
+const dynamicspeakers = [
   {
     id: 1,
     url: 'asset/speakers/aliko-dangote.png',
@@ -43,21 +43,19 @@ const speakers = [
   },
 ];
 
-let openHam=document.getElementById('openHam');
-let closeHam=document.getElementById('closeHam');
-let hambuger=document.getElementById('hambuger');
-let menuLink=document.querySelectorAll('.menu-list__item');
-const menucontainer=document.querySelector('.lower-nav__center');
+const openHam = document.getElementById('openHam');
+const closeHam = document.getElementById('closeHam');
+const menuLink = document.querySelectorAll('.menu-list__item');
+const menucontainer = document.querySelector('.lower-nav__center');
+const featuredSpeakers = document.getElementById('all-speakers');
 
-
-openHam.addEventListener('click',(e)=>{
+openHam.addEventListener('click', () => {
   menucontainer.classList.toggle('hide');
   openHam.classList.add('hide');
   closeHam.classList.remove('hide');
 });
 
-
-closeHam.addEventListener('click',(e)=>{
+closeHam.addEventListener('click', () => {
   menucontainer.classList.toggle('hide');
   openHam.classList.remove('hide');
   closeHam.classList.add('hide');
@@ -68,3 +66,20 @@ menuLink.forEach((link) => link.addEventListener('click', () => {
   openHam.classList.remove('hide');
   closeHam.classList.add('hide');
 }));
+
+const speakers = function () {
+  for (let i = 0; i < dynamicspeakers.length; i += 1) {
+    featuredSpeakers.innerHTML += `
+    <div class="feature-speakers__card featured-speakers__box featured-speakers__box-display" >
+    <img src=${dynamicspeakers[i].url} alt=${dynamicspeakers[i].name} class="speaker-pix">
+    <div class="feature-speakers__card-details">
+        <h3 class="feature-speakers__card-details-name">${dynamicspeakers[i].name}</h3>
+        <p class="feature-speakers__card-details-info">${dynamicspeakers[i].job}</p>
+        <p class="feature-speakers__card-details-about">${dynamicspeakers[i].desc}</p>
+    </div>
+  </div>
+          `;
+  }
+};
+
+window.addEventListener('load', speakers);
