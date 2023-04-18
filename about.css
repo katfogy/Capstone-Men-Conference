@@ -12,19 +12,6 @@
   --transition: all 0.3s ease-in;
 }
 
-.about__hero-heading {
-  font-size: 1.5rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  line-height: 1.5;
-  display: inline-block;
-  background-image: url(/asset/images/happy.jpg);
-  -webkit-background-clip: text;
-  color: transparent;
-  background-size: contain;
-  margin-bottom: 10px;
-}
-
 .about__hero-title {
   color: var(--color-royal-orange);
 }

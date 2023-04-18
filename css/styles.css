@@ -133,13 +133,48 @@ header {
   color: var(--color-carmine-pink);
 }
 
+.about__hero-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.5;
+  display: inline-block;
+  background:
+    linear-gradient(
+      to left,
+      red,
+      rgba(236, 67, 96, 0.863),
+      rgba(255, 0, 0, 0.26),
+      rgb(105, 44, 3),
+      #ec5242,
+      red,
+      rgb(133, 88, 4),
+      red
+    );
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: contain;
+  margin-bottom: 10px;
+}
+
 .hero__heading {
   font-size: 1.5rem;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1.5;
   display: inline-block;
-  background-image: url(/asset/images/happy.jpg);
+  background:
+    linear-gradient(
+      to left,
+      red,
+      rgba(236, 67, 96, 0.863),
+      rgba(255, 0, 0, 0.26),
+      rgb(105, 44, 3),
+      #ec5242,
+      red,
+      rgb(133, 88, 4),
+      red
+    );
   -webkit-background-clip: text;
   color: transparent;
   background-size: contain;
@@ -397,7 +432,9 @@ button:hover {
 
   .hero {
     max-width: 700px;
-    margin: 50px 100px 0;
+    margin: 120px 100px 0;
+    position: relative;
+    padding-top: 40px;
   }
 
   .hero__heading {
