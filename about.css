@@ -1,0 +1,140 @@
+:root {
+  --color-gray: #808080;
+  --color-lighter-gray: #ececec;
+  --color-light-gray: #d3d3d3;
+  --color-carmine-pink: #ec5242;
+  --color-carmine-pink-rgba: rgba(74, 20, 14, 0.95);
+  --color-royal-orange: #e72a17;
+  --color-charleston-green: #272a31;
+  --color-white: #fff;
+  --color-dark-charcoal: #323232;
+  --color-bg: #494e5a;
+  --transition: all 0.3s ease-in;
+}
+
+.about__hero-title {
+  color: var(--color-royal-orange);
+}
+
+.about__hero-email {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.about__hero-email a {
+  color: var(--color-charleston-green);
+  border-bottom: 1px solid var(--color-charleston-green);
+}
+
+.decide {
+  padding: 20px;
+}
+
+.decide__container {
+  max-width: 1200px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.decide__container-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 400px;
+  margin-block: 20px;
+  border: 2px solid var(--color-gray);
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.container-logo-icon {
+  width: 20%;
+}
+
+.decide__container-container-details-text {
+  font-size: 0.9rem;
+}
+
+.decide__container-body {
+  line-height: 2;
+}
+
+.previous {
+  padding: 20px;
+  background-color: var(--color-lighter-gray);
+}
+
+.previous__container-header {
+  font-weight: 900;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.previous__container-body {
+  text-align: center;
+  margin-block: 10px;
+}
+
+.previous__container-images {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.previous__container-images-card-image {
+  width: 100%;
+}
+
+.previous__container-images-card-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(74, 20, 14, 0.8);
+}
+
+.previous-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-lighter-gray);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.previous__container-images-card {
+  position: relative;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.previous__container-images-card:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 768px) {
+  .about__hero {
+    max-width: 800px;
+    padding: 40px 20px;
+    margin: 100px auto 20px;
+  }
+
+  .about__hero-heading {
+    font-size: 3rem;
+  }
+
+  .previous__container-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .about-reserve {
+    color: var(--color-white);
+  }
+}
