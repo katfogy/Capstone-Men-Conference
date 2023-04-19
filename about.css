@@ -16,18 +16,6 @@
   color: var(--color-royal-orange);
 }
 
-.about__hero-body {
-  margin-top: 80px;
-  background-color: var(--color-lighter-gray);
-  padding: 10px;
-  line-height: 1.5;
-}
-
-.about__hero-contact {
-  text-align: center;
-  margin-top: 20px;
-}
-
 .about__hero-email {
   text-align: center;
   margin-top: 10px;
@@ -73,11 +61,7 @@
 
 .previous {
   padding: 20px;
-}
-
-.previous__container {
-  max-width: 1200px;
-  margin: auto;
+  background-color: var(--color-lighter-gray);
 }
 
 .previous__container-header {
@@ -120,10 +104,6 @@
   line-height: 1.5;
 }
 
-.previous__container-images-card-details-body {
-  font-size: 0.7rem;
-}
-
 .previous__container-images-card {
   position: relative;
   margin-bottom: 10px;
@@ -152,10 +132,6 @@
     gap: 20px;
     max-width: 600px;
     margin: 20px auto;
-  }
-
-  footer {
-    background-color: var(--color-charleston-green);
   }
 
   .about-reserve {
